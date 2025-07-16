@@ -1,0 +1,75 @@
+/* Add styles here */
+#content{
+  text-align: center;
+  justify-content: center;
+  display: block
+}
+
+button{
+  color: #ffffff;
+  background-color: rgb(105, 105, 165);
+  margin: 10px;
+ padding: 1px 14px;
+ border-radius: 5px;
+ transform: background-color .25s;
+}
+button:hover{
+  background-color: #2c3871;
+  color: rgb(105, 105, 165);
+}
+button:active{
+  background-color: rgb(105, 105, 165);
+  color: #0f1015;
+}
+
+#dice{
+   left: 0px;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(206, 189, 149); 
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+    margin: auto;
+}
+#rol1{ 
+  position: absolute;  
+  top: 70px;
+  left: 70px;
+}
+
+#rol2{ 
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#rol3{ 
+  position: absolute;
+  right:  10px;
+  bottom: 10px;
+}
+
+#rol4{ 
+  position: absolute;
+  right: 61px;
+  bottom: 70px;
+}
+#rol5{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+#rol6{
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  
+}
+.black{ 
+  height: 50px;
+  width: 50px;
+  background: radial-gradient(#ece4e4, #0f1015);
+  border-radius: 50px;
+  display: none;
+}

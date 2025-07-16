@@ -1,4 +1,5 @@
 # To learn more about how to use Nix to configure your environment
+<<<<<<< HEAD
 # see: https://firebase.google.com/docs/studio/customize-workspace
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
@@ -13,6 +14,17 @@
     # pkgs.nodePackages.nodemon
   ];
 
+=======
+# see: https://developers.google.com/idx/guides/customize-idx-env
+{ pkgs, ... }: {
+  # Which nixpkgs channel to use.
+  channel = "stable-23.11"; # or "unstable"
+  # Use https://search.nixos.org/packages to find packages
+  packages = [
+    pkgs.nodejs_20
+    pkgs.python3
+  ];
+>>>>>>> origin/master
   # Sets environment variables in the workspace
   env = {};
   idx = {
@@ -20,6 +32,7 @@
     extensions = [
       # "vscodevim.vim"
     ];
+<<<<<<< HEAD
 
     # Enable previews
     previews = {
@@ -38,12 +51,29 @@
       };
     };
 
+=======
+    # Enable previews and customize configuration
+    previews = {
+      enable = true;
+      previews = {
+        web = {
+          command = ["python3" "-m" "http.server" "$PORT" "--bind" "0.0.0.0"];
+          manager = "web";
+        };
+      };
+    };
+>>>>>>> origin/master
     # Workspace lifecycle hooks
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
         # Example: install JS dependencies from NPM
         # npm-install = "npm install";
+<<<<<<< HEAD
+=======
+        # Open editors for the following files by default, if they exist:
+        default.openFiles = [ "style.css" "main.js" "index.html" ];
+>>>>>>> origin/master
       };
       # Runs when the workspace is (re)started
       onStart = {
@@ -52,4 +82,8 @@
       };
     };
   };
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
