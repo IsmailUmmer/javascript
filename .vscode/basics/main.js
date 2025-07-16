@@ -206,3 +206,28 @@
 
 //---------------------------------------------------------------------------------------------------------------------------
 
+// STRICT EQULATY
+
+//  const PI = 3.14;
+
+//  if (PI != "3.14"){
+//      console.log("PI is a number");
+//  }
+// else{
+//     console.log("PI is not a number");
+// }
+
+// if (PI === "3.14"){
+//      console.log("PI is a number");
+//  }
+// else{
+//     console.log("PI is not a number");
+// }
+
+// if (PI !== "3.14"){
+//     console.log("PI is a number");
+// }
+// else{
+//     console.log("PI is not a number");
+// }
+
