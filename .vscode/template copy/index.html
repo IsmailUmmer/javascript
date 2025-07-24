@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <link href='style.css' rel='stylesheet'>
+</head>
+<body>
+  <form 
+          id="form">
+      <h1>temperature conversion</h1>
+      
+
+      <input type="number" value="0" id="textbox"><br>
+      <input type="radio" id="toCelsius" name="unit">
+      <label for="toCelsius">celsius to farenhiet </label><br>
+
+      <input type="radio" id="toFarenhiet" name="unit">
+      <label for="toFarenhiet">farenhiet to celsius </label>
+      <br>
+      <button type="button" onclick="convert()">submit</button>
+      <p id="result"></p>
+    
+
+  </form>
+
+
+  <script defer type="text/javascript" src="main.js"></script>
+</body>
+</html>
