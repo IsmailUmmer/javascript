@@ -206,3 +206,44 @@
 
 //---------------------------------------------------------------------------------------------------------------------------
 
+// FUNCTIONS
+
+// function happybday (userName,age){
+//     console.log("happy birthday to you");
+//     console.log(`happy birthday to ${userName}`);
+//     console.log(`happy ${age}th birthday `);
+// }
+
+// // happybday();
+// happybday("ismail", 10);
+
+// function add(x, y){
+//     return x + y;
+// }
+
+// console.log(add(2,4));
+
+// let email = window.prompt("enter your email");
+// console.log(isvalid(email));
+
+// function isvalid(email){
+//     if (email.includes("@") && email.includes(".com")){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+    
+// }
+// console.log(email)
+
+
+// SCOPE VARIABLE
+
+//     let x=1;                      //global variable
+
+//    function fuv(){
+//     x=10;                          //here local will be called first since both has same variabe
+//     console.log(x);
+//    }
+//    fuv();
