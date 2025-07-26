@@ -252,8 +252,108 @@
 //------------------------------------------------------------------------------------------------------------------
 //ARRAYS
 
-let Fruits = ["apple", "banana", "orange", "mango",]
+// let Fruits = ["apple", "banana", "orange", "mango",]
 
-Fruits.push("cocunut");
+// Fruits.push("cocunut");             //added
+// Fruits.pop();                       //removed
+// Fruits.unshift("grape");         // adds a new element to starting of an array
+// Fruits.shift();               // removed
+// Fruits.sort();
 
-console.log(Fruits);
+// console.log(Fruits);
+// let Numoffruits = Fruits.length;
+// console.log(Numoffruits);
+
+// console.log(Fruits[2]);
+// for (let i = 0; i < Fruits.length; i++){
+//     console.log(Fruits[i]);
+// }
+
+// for(let Fruit of Fruits)
+//     {
+//         console.log(Fruit);
+//     }
+
+
+
+//----------------------------------------------------------------------------------------------------------------  
+
+// 2 D ARRAYS
+
+// const matrix = [[1,2,3],[4,5,6],[7,8,9]];
+
+// for (row of matrix){
+//   const rowstring = row.join(' ');
+//   console.log(rowstring);
+// }
+
+//----------------------------------------------------------------------------------------------------------------
+// SPREAD OPERATOR
+// let num = [1,2,3,4,5,6,7,8,9];
+
+// let max = Math.max(...num);
+// let min = Math.min(...num);
+// console.log(max);
+// console.log(min);
+
+// let Fruits = ["apple","orange","banana"];
+// let veg = ["tomato","potato","carrot"];
+
+// let food = [...Fruits,...veg, "egg"];
+
+// console.log(food);
+
+//--------------------------------------------------------------------------------------------------------------
+
+//  REST PARAMETERS
+
+// function fridge(...foods){
+//     console.log(foods);
+// }
+
+// function fridge(...foods){
+//     return foods;
+// }
+
+
+// const food1 = "biriyani";
+// const food2 = "pizza";
+// const food3 = "burger";
+// const food4 = "sushi"
+
+// // fridge(food1,food2);
+
+// const food = fridge(food1,food2,food3,food4);
+
+// console.log(...food);
+
+// function sum (...numbers){
+//     let result = 0;
+//     for(let number of numbers){
+//      result += number;
+//     }
+//      return result;
+    
+// }
+
+// const total = sum(1,2,2,5);
+// console.log(total);
+
+// function avg(...numbers){
+//     let result = 0;
+//     for(let number of numbers){
+//         result += number;
+//     }
+//     return result/numbers.length;
+// }
+// const totalavg = avg(75,100,85,90,50);
+// console.log(totalavg);
+
+function combinestr(...str)
+{
+    return str.join(' ');
+   
+}
+
+const fullname = combinestr("ismai", "ummer", "kakkathadathil")
+console.log(fullname);
