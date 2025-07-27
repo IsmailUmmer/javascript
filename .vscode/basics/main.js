@@ -349,11 +349,11 @@
 // const totalavg = avg(75,100,85,90,50);
 // console.log(totalavg);
 
-function combinestr(...str)
-{
-    return str.join(' ');
+// function combinestr(...str)
+// {
+//     return str.join(' ');
    
-}
+// }
 
-const fullname = combinestr("ismai", "ummer", "kakkathadathil")
-console.log(fullname);
+// const fullname = combinestr("ismai", "ummer", "kakkathadathil")
+// console.log(fullname);
