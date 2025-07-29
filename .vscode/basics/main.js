@@ -357,3 +357,75 @@
 
 // const fullname = combinestr("ismai", "ummer", "kakkathadathil")
 // console.log(fullname);
+//------------------------------------------------------------------------------------------------------------------------
+
+//   CALLBACK
+
+// goodbye();
+// hello(wait);
+// wait();
+
+// function hello(callback){
+//     console.log("hello");
+//     callback();
+// }
+
+// function wait(){
+//     console.log("wait");
+// }
+
+// function goodbye(){
+//     console.log("good bye")
+// }
+// sum(dispay, 3,2);
+
+// function sum (callback , x , y){
+//   let result = x +y;
+//   callback(result);
+
+// }
+// function dispay(result) {
+//     console.log(result);
+// }
+
+//=---------------------------------------------------------------------------------------------
+
+// FOR EACH
+
+// let numbers = [1,2,3,4,5,6,7];
+
+// numbers.forEach(square);
+// numbers.forEach(display);
+
+// function double(value , index , array ){
+//    array[index]= value *2;
+// }
+
+// function triple(value ,index, array){
+//     array[index]= value*3;
+// }
+
+// function square(value ,index , array ){
+//    array[index]= Math.pow(value,2);
+// }
+
+
+// function display(element){
+//     console.log(element);
+// }
+//
+// const Fruits = ["apple", "banaNa","mango","cocunut"];
+// Fruits.forEach(camelCase);
+// Fruits.forEach(display);
+
+// function UpperCase(value, index , array){
+//      array[index]= value.toUpperCase();
+// }
+
+// function camelCase (value ,index, array){
+//     array[index ]= value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+// }
+
+// function display(element){
+//         console.log(element);
+//  }
