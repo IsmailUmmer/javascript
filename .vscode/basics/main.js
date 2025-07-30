@@ -414,18 +414,106 @@
 //     console.log(element);
 // }
 //
-// const Fruits = ["apple", "banaNa","mango","cocunut"];
-// Fruits.forEach(camelCase);
-// Fruits.forEach(display);
+// ----------------------------------------------------------------------------------------------------------------
 
-// function UpperCase(value, index , array){
-//      array[index]= value.toUpperCase();
+// MAP METHOD
+
+// const numbers = [1,2,3,4,5,];
+
+// squaredNumbers = numbers.map(square);
+
+// console.log(squaredNumbers);
+// function square(value ,index ,array) {
+//     return Math.pow(value, 2);
+    
 // }
 
-// function camelCase (value ,index, array){
-//     array[index ]= value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+// -------------------------------------------------------------------------------------------------------------------
+
+//  const Fruits = ["apple","banana","kwivi", "painapple"];
+
+// let changeduppercase = Fruits.map(upperCase);
+
+// function upperCase(value){
+//    return value.toUpperCase();
+// }
+ 
+// console.log(changeduppercase);
+
+
+// let dates = ["2010-1-30","2020-2-5","2022-5-12"];
+
+// let arrangedDates = dates.map(split)
+
+// function split (value){
+//     let parts = value.split("-");
+//     return `${parts[2]}/${parts[1]}/${parts[0]}`;
 // }
 
-// function display(element){
-//         console.log(element);
-//  }
+// console.log(arrangedDates);
+
+
+// FILTER MOTHOD
+
+// const numbers = [1,2,3,4,5,6,7,8,9];
+
+// const oddNumbers =numbers.filter(iseven);
+
+// console.log(oddNumbers);
+
+// function isodd (value){ 
+//     if (value %2 === 0)
+//             return value ;
+// }
+// function iseven(value){
+//     if (value %2 !== 0)
+//             return value ;
+// }
+
+// const age = [12,13,12,20,6,45,12,4,56];
+
+// const adultsages= age.filter(adult);
+// function child(value){
+//      return value < 18;
+// }
+
+// function adult(value){
+//     return value>18;
+// }
+// console.log(adultsages);
+
+// const array = ["apple","banana","mango","pomagranate"];
+
+// const short = array.filter(shortwords);
+// console.log(short);
+// function shortwords (value){
+//   return value.length <=6;
+
+// }
+
+//------------------------------------------------------------------------------------------------------------------------
+
+//        REDUCE
+
+// const price  =  [10,20,30,4,5,8,90,50]
+
+// const total = price.reduce(totalprice)
+// console.log(total.toFixed(2));                                                                   
+ //                                                                   function name ( 10 , 20)
+ //                                                                    return  30;
+// function totalprice (adding , next){                               function name (30 , 30)
+//    return adding+next;                                              return 60;
+// // }
+
+// const grade = [50,60,60,30,20,90,2,95];
+
+// const min = grade.reduce(minium)
+// console.log(min);
+// function minium (value , next ){
+//      return Math.min(value,next) 
+// }
+// const max = grade.reduce(maxium)
+// console.log(max)
+// function maxium (value , next){
+//     return Math.max(value,next)
+// }
