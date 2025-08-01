@@ -542,3 +542,36 @@
 //-------------------------------------------------------------------------------------------------------------------
 // ARROW FUNCTIONS
 
+
+
+
+// setTimeout( hello = ()=> console.log("hello")  ,3000)
+
+// hello();
+
+// const numbers = [1,2,3,4,5,6];
+
+// const square = numbers.map( (value)=> Math.pow(value,2)  )
+// const max = numbers.reduce((value,next)=> Math.max(value,next))
+// const oddNumbers = numbers.filter((value)=> value%2 !==0 )
+
+// console.log(oddNumbers);
+
+
+
+// const hello = (usrname, age)=> {console.log(`hii ${usrname}`)
+//                                console.log(`your age is ${age}`)}
+
+// hello("ismail", 25);
+
+// -------------------------------------------------------------------------------------------------------------------
+//
+// OBJECTS
+
+const person1 = {
+    firstName : "spongebob",
+    lastName  :"square pants",
+     eat :  () => console.log("hi , i am spongebob")  ,
+    
+}
+person1.eat();
