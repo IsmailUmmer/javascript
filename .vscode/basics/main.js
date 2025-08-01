@@ -517,3 +517,28 @@
 // function maxium (value , next){
 //     return Math.max(value,next)
 // }
+//-----------------------------------------------------------------------------------------------------------
+// FUNCTION EXPPRSSSION
+
+//  const array = [1,2,3,4,5,6];
+
+//  const squre = array.map( function (value){
+//     return Math.pow(value,2);
+// })
+// console.log(squre)
+
+// const cube =array.map(function (value){
+//     return Math.pow(value,3);
+// })
+// console.log(cube);
+
+// const total = array.reduce( function(value , next){
+//    return value+next;
+// })
+
+// console.log(total);
+
+
+//-------------------------------------------------------------------------------------------------------------------
+// ARROW FUNCTIONS
+
