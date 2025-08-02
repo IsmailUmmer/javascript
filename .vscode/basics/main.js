@@ -568,10 +568,83 @@
 //
 // OBJECTS
 
-const person1 = {
-    firstName : "spongebob",
-    lastName  :"square pants",
-     eat :  () => console.log("hi , i am spongebob")  ,
+// const person1 = {
+//     firstName : "spongebob",
+//     lastName  :"square pants",
+//      eat :  () => console.log("hi , i am spongebob")  ,
     
-}
-person1.eat();
+// }
+// person1.eat();
+// console.log(person1.firstName);
+
+// -----------------------------------------------------------------------------------------------------
+
+//THIS KEYWORD
+
+// const  person1 = {
+//  name : "spongebob",
+//  food : "burger",
+//  eat : function(){ console.log(`${this.name} is eating ${this.food}`)}
+// }
+
+// const  person2 = {
+//  name : "parick",
+//  food : "pizza",
+//  eat : function(){ console.log(`${this.name} is eating ${this.food}`)}
+// }
+
+// person1.eat();
+// person2.eat();
+
+// CONSTRUCTOR
+
+// function car (make ,model,year,color){
+//   this.make =make;
+//   this.model =model;
+//   this.year =year;
+//   this.color =color;
+//   this.drive = function(){console.log(`you are driving a ${this.make} ${this.model}`)}
+// }
+
+//  const car1 = new car("hundai" , "eon", 2014 , "white");
+//  const car2 = new car("honda","amaze", 2025 , "red");
+
+//  car2.drive();
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------
+// CLASS
+
+// class Products {
+//   constructor(product , price){
+//     this.product = product,
+//     this.price = price;
+//   }
+  
+//   displayproducts(){console.log(`product : ${this.product}`)
+//                      console.log(`price : ₹ ${this.price}`)}
+ 
+//   productPlusGST(gst){
+//     const total = gst+ this.price;
+//     console.log(`total including gst = ${total}`)}                   
+// }
+
+// const gst = 18;
+
+// const product1 = new Products("pants ", 4000);
+// const product2 = new Products("shirt ", 1200);
+
+// product1.displayproducts();
+// product1.productPlusGST(gst);
+
+
+// class PhoneBook{
+//   constructor( username ,number){
+//     this.username = username;
+//     this.number = number;
+//   }
+// }
+
+// const Myphbook = new PhoneBook ("ismail", 9562348547)
+// const sisphbook =  new PhoneBook("irfa" , 9444444884);
+
+// console.log(`${Myphbook.username}`);
