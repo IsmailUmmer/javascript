@@ -604,20 +604,22 @@
 
 // STATIC METHODS
 
-class Users {
-     static totalActiveUsers = 0;
+// class Users {
+//      static totalActiveUsers = 0;
      
-     constructor(name){
-        this.name = name;
-     }
-     check(){
-        console.log(`${this.name}`)
-        Users.totalActiveUsers++;
-        console.log(` total active users are ${Users.totalActiveUsers}`);
-     }
-}
+//      constructor(name){
+//         this.name = name;
+//      }
+//      check(){
+//         console.log(`${this.name}`)
+//         Users.totalActiveUsers++;
+//         console.log(` total active users are ${Users.totalActiveUsers}`);
+//      }
+// }
 
-const user1 = new Users("ismail");
-user1.check();
+// const user1 = new Users("ismail");
+// user1.check();
 
 
+// ----------------------------------------------------------------------------------------------------------------
+//  INHERITANCE
