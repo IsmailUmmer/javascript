@@ -568,10 +568,5 @@
 //
 // OBJECTS
 
-const person1 = {
-    firstName : "spongebob",
-    lastName  :"square pants",
-     eat :  () => console.log("hi , i am spongebob")  ,
-    
-}
-person1.eat();
+
+
