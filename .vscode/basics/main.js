@@ -568,10 +568,56 @@
 //
 // OBJECTS
 
-const person1 = {
-    firstName : "spongebob",
-    lastName  :"square pants",
-     eat :  () => console.log("hi , i am spongebob")  ,
+// const person1 = {
+//     firstName : "spongebob",
+//     lastName  :"square pants",
+//      eat :  () => console.log("hi , i am spongebob")  ,
     
+// }
+// person1.eat();
+
+
+// const person1 = {
+//     firstName : "spongebob",
+//     lastName  :"square pants",
+//      eat :  () => console.log("hi , i am spongebob")  ,
+    
+// }
+// person1.eat();
+
+// class mathutil{
+//     static PI = 3.14159;
+//     static radius (radius){
+//         return radius * 2;
+//      }
+//      static circumference(radius){
+//         return 2 * this.PI * radius;
+//      }
+// }
+
+// console.log(mathutil.PI);
+// console.log(mathutil.radius(10));
+// console.log(mathutil.circumference(10));   
+
+// ---------------------------------------------------------------------------------------------------------------
+
+
+// STATIC METHODS
+
+class Users {
+     static totalActiveUsers = 0;
+     
+     constructor(name){
+        this.name = name;
+     }
+     check(){
+        console.log(`${this.name}`)
+        Users.totalActiveUsers++;
+        console.log(` total active users are ${Users.totalActiveUsers}`);
+     }
 }
-person1.eat();
+
+const user1 = new Users("ismail");
+user1.check();
+
+
