@@ -623,3 +623,93 @@
 
 // ----------------------------------------------------------------------------------------------------------------
 //  INHERITANCE
+// class animal {
+
+//     static alive = true;
+    
+//     eat(){
+//         console.log(`${this.name} is eating`) 
+//     }
+
+// }
+
+// class rabbit extends animal {
+//     name = "rabbit";
+//     run(){
+//         console.log(`the ${this.name} can run`)
+//     }
+// }
+
+// class Duck extends animal {
+//     name = "duck";
+//     swim(){
+        
+//             console.log(`the ${this.name} can swim`)
+    
+//     }
+// }
+
+// const rabbit1 = new rabbit();
+// rabbit1.eat();
+
+// const duck = new Duck();
+// duck.swim();
+// duck.eat();
+
+//SUPER 
+
+class Animal {
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    move(speed){
+        console.log(`${this.name} is moving at a speed of ${speed} mph`);
+    }
+
+    }
+
+
+class Rabbit extends Animal{
+    constructor (name , age ,runspeed){
+        super(name,age)
+        this.runspeed = runspeed;
+        
+    }
+    run(){
+        console.log(`${this.name} can run`);
+        super.move(this.runspeed);
+    }
+
+}
+class Duck extends Animal{
+    
+    constructor(name,age,swimspeed){
+        super(name,age)
+        this.swimspeed = swimspeed;
+    }
+    swim(){
+        console.log(`${this.name} can swim`);
+        super.move(this.swimspeed);
+}
+}
+
+class Pegion extends Animal{
+    
+    constructor(name,age,flyspeed){
+        super(name, age);
+        this.flyspeed = flyspeed;
+        }
+    fly(){
+        console.log(`${this.name} can fly`);
+        super.move(this.flyspeed);
+    }
+}
+
+const pegion = new Pegion("pegion",10,100);
+console.log(pegion);
+const duck = new Duck("duck",20,10);
+console.log(duck);
+const rabbit = new Rabbit("rabbit",14,141);
+console.log(rabbit);
+rabbit.run();
