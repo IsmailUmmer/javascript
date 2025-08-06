@@ -26,7 +26,7 @@
 //    userName = document.getElementById("text").value;
 //    console.log(userName);
 //     document.getElementById("head").textContent = (`hello ${userName}`);
-    
+
 // }
 // --------------------------------------------------------------------------//
 //MATH OPERATORS
@@ -62,7 +62,7 @@
 // console.log(`your amount is ${purchaseamt} after discount ${discount}% totoal amount is ${purchaseamt}`);
 
 //--------------------------------------------------------------------------------------------------------------------
- // SWITCH CASE
+// SWITCH CASE
 
 // let day = " 1" ;
 
@@ -233,7 +233,7 @@
 //     else{
 //         return false;
 //     }
-    
+
 // }
 // console.log(email)
 
@@ -333,7 +333,7 @@
 //      result += number;
 //     }
 //      return result;
-    
+
 // }
 
 // const total = sum(1,2,2,5);
@@ -352,7 +352,7 @@
 // function combinestr(...str)
 // {
 //     return str.join(' ');
-   
+
 // }
 
 // const fullname = combinestr("ismai", "ummer", "kakkathadathil")
@@ -425,7 +425,7 @@
 // console.log(squaredNumbers);
 // function square(value ,index ,array) {
 //     return Math.pow(value, 2);
-    
+
 // }
 
 // -------------------------------------------------------------------------------------------------------------------
@@ -437,7 +437,7 @@
 // function upperCase(value){
 //    return value.toUpperCase();
 // }
- 
+
 // console.log(changeduppercase);
 
 
@@ -499,8 +499,8 @@
 
 // const total = price.reduce(totalprice)
 // console.log(total.toFixed(2));                                                                   
- //                                                                   function name ( 10 , 20)
- //                                                                    return  30;
+//                                                                   function name ( 10 , 20)
+//                                                                    return  30;
 // function totalprice (adding , next){                               function name (30 , 30)
 //    return adding+next;                                              return 60;
 // // }
@@ -572,7 +572,7 @@
 //     firstName : "spongebob",
 //     lastName  :"square pants",
 //      eat :  () => console.log("hi , i am spongebob")  ,
-    
+
 // }
 // person1.eat();
 
@@ -581,7 +581,7 @@
 //     firstName : "spongebob",
 //     lastName  :"square pants",
 //      eat :  () => console.log("hi , i am spongebob")  ,
-    
+
 // }
 // person1.eat();
 
@@ -606,7 +606,7 @@
 
 // class Users {
 //      static totalActiveUsers = 0;
-     
+
 //      constructor(name){
 //         this.name = name;
 //      }
@@ -626,7 +626,7 @@
 // class animal {
 
 //     static alive = true;
-    
+
 //     eat(){
 //         console.log(`${this.name} is eating`) 
 //     }
@@ -643,9 +643,9 @@
 // class Duck extends animal {
 //     name = "duck";
 //     swim(){
-        
+
 //             console.log(`the ${this.name} can swim`)
-    
+
 //     }
 // }
 
@@ -658,58 +658,149 @@
 
 //SUPER 
 
-class Animal {
-    constructor(name,age){
-        this.name = name;
-        this.age = age;
-    }
-    move(speed){
-        console.log(`${this.name} is moving at a speed of ${speed} mph`);
-    }
+// class Animal {
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     move(speed){
+//         console.log(`${this.name} is moving at a speed of ${speed} mph`);
+//     }
 
-    }
+//     }
 
 
-class Rabbit extends Animal{
-    constructor (name , age ,runspeed){
-        super(name,age)
-        this.runspeed = runspeed;
-        
-    }
-    run(){
-        console.log(`${this.name} can run`);
-        super.move(this.runspeed);
-    }
+// class Rabbit extends Animal{
+//     constructor (name , age ,runspeed){
+//         super(name,age)
+//         this.runspeed = runspeed;
 
-}
-class Duck extends Animal{
-    
-    constructor(name,age,swimspeed){
-        super(name,age)
-        this.swimspeed = swimspeed;
-    }
-    swim(){
-        console.log(`${this.name} can swim`);
-        super.move(this.swimspeed);
-}
-}
+//     }
+//     run(){
+//         console.log(`${this.name} can run`);
+//         super.move(this.runspeed);
+//     }
 
-class Pegion extends Animal{
-    
-    constructor(name,age,flyspeed){
-        super(name, age);
-        this.flyspeed = flyspeed;
-        }
-    fly(){
-        console.log(`${this.name} can fly`);
-        super.move(this.flyspeed);
-    }
-}
+// }
+// class Duck extends Animal{
 
-const pegion = new Pegion("pegion",10,100);
-console.log(pegion);
-const duck = new Duck("duck",20,10);
-console.log(duck);
-const rabbit = new Rabbit("rabbit",14,141);
-console.log(rabbit);
-rabbit.run();
+//     constructor(name,age,swimspeed){
+//         super(name,age)
+//         this.swimspeed = swimspeed;
+//     }
+//     swim(){
+//         console.log(`${this.name} can swim`);
+//         super.move(this.swimspeed);
+// }
+// }
+
+// class Pegion extends Animal{
+
+//     constructor(name,age,flyspeed){
+//         super(name, age);
+//         this.flyspeed = flyspeed;
+//         }
+//     fly(){
+//         console.log(`${this.name} can fly`);
+//         super.move(this.flyspeed);
+//     }
+// }
+
+// const pegion = new Pegion("pegion",10,100);
+// console.log(pegion);
+// const duck = new Duck("duck",20,10);
+// console.log(duck);
+// const rabbit = new Rabbit("rabbit",14,141);
+// console.log(rabbit);
+// rabbit.run();
+
+//----------------------------------------------------------------------------------------------------------------
+
+//GETTERS & SETTERS
+
+// class Rectangle {
+//     constructor(width,height){
+//         this.width = width;
+//         this.height = height;
+//     }
+//     set width (width){
+//         if(width>=0) {
+//         this._width = width;
+//     }
+//     else{
+//         console.error("width cannot be negative");
+//     }
+// }
+//     get width(){
+//         return this._width;
+//     }
+//     set height(height){
+//         if(height>=0) {
+//             this._height = height;
+//         }
+//         else{
+//             console.error("height cannot be negative");
+//         }
+
+//     }
+//     get height(){
+//         return this._height;
+//     }
+//     }
+
+//     const rectangle = new Rectangle("-100","ismail")
+
+//     console.log(rectangle.height);
+//     console.log(rectangle.width);
+
+//-----------------------------------------------
+// class Person {
+//     constructor(name, lastname, age) {
+//         this.name = name;
+//         this.lastname = lastname;
+//         this.age = age;
+//     }
+//     set name(newname) {
+//         if (typeof (newname) === "string" && newname.length > 0) {
+//             this._name = newname;
+//         } else {
+//             console.error("username is invalid")
+//         }
+//     }
+//     set lastname(newlastname) {
+//         if (typeof (newlastname) === "string" && newlastname.length > 0) {
+//             this._lastname = newlastname;
+//         } else {
+//             console.error("lastname is invalid")
+//         }
+//     }
+//     set age(newage){
+//         if (typeof newage === 'number' && newage >0 ){
+//             this._age = newage;
+//         }else{
+//             console.error("invalid age");
+//         }
+//     }
+//     get name(){
+//         return this._name;
+//     }
+//     get lastname(){
+//        return  this._lastname;
+//     }
+
+//     get age(){
+//         return this._age;
+//     }
+
+//     get fullname(){
+//         return this._name + " " + this._lastname;
+//     }
+
+// }
+// const person1 = new Person("ismail", "kakkathadathil", 25);
+// console.log(person1.name);
+// console.log(person1.lastname);
+// console.log(person1.age);
+// console.log(person1.fullname);
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
