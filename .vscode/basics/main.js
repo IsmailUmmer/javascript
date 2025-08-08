@@ -863,3 +863,26 @@
 // console.log(person.age);
 // console.log(person.hobbies[2]);
 // console.log(person.address.place);
+
+//-----------------------------------------
+
+// class Person  {
+//     constructor(name , age , ...address){
+//         this.name = name;
+//         this.age = age;
+//         this.address = new Address(...address)
+//     }
+// }
+
+// class Address {
+//     constructor(street, place, district, state) {
+//         this.street = street;
+//         this.place = place;
+//         this.district = district;
+//         this.state = state;
+//     }
+// }
+// const person = new Person ("ismail", 16 , "muthuthala", "pattambi", "palakkad", "kerala");
+
+// console.log(person.address.place)
+
