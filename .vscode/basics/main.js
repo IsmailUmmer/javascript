@@ -1,8 +1,14 @@
-// WINDOW ALERT 
+// 
+//                                         BASICS OF JAVASCRIPT
 
+// WINDOW ALERT 
 
 // window.alert(`hello`);
 // document.getElementById(`btn`).innerHTML = ' peresed'
+
+//-----------------------------------------------------------------------------------------
+//VARIABLE
+
 // let fullName = "ismail";
 // let age = 10;
 // let course = false;
@@ -10,16 +16,13 @@
 // document.getElementById("p1").textContent = `my name is ${fullName}` ;
 // document.getElementById("p2").textContent = ` my age is ${age}`;
 // document.getElementById("p3").textContent= `is enrolled for course ? = ${course}`;
-
 // let x = 30;
-
 // console.log(x);
 //  let age = window.prompt("enter your age");
 //  age = Number(age);
 //  age+=1;
 
 //  console.log(age);
-
 // let userName;
 
 // document.getElementById("submitbtn").onclick = function(){
@@ -28,7 +31,7 @@
 //     document.getElementById("head").textContent = (`hello ${userName}`);
 
 // }
-// --------------------------------------------------------------------------//
+// -----------------------------------------------------------------------------------------
 //MATH OPERATORS
 
 // console.log(Math.PI);
@@ -159,6 +162,7 @@
 // extention = email.slice(email.indexOf("@")+1);
 // console.log(extention);
 
+//--------------------------------------------------------------------------------------------------------------
 // METHOD CHAINING
 
 // userName = window.prompt("enter your name");
@@ -176,7 +180,7 @@
 // userName= userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
 // console.log(userName);
 
-
+//------------------------------------------------------------------------------------------------------------
 //LOGICAL OPERATORS
 
 // let temp = -20;
@@ -207,7 +211,7 @@
 //------------------------------------------------------------------------------------------------------------------------
 
 // FUNCTIONS
-
+//ARGUMENTS
 // function happybday (userName,age){
 //     console.log("happy birthday to you");
 //     console.log(`happy birthday to ${userName}`);
@@ -216,6 +220,8 @@
 
 // // happybday();
 // happybday("ismail", 10);
+
+//RETURN KEWORD
 
 // function add(x, y){
 //     return x + y;
@@ -252,6 +258,7 @@
 //------------------------------------------------------------------------------------------------------------------
 //ARRAYS
 
+// ARRAY METHODS
 // let Fruits = ["apple", "banana", "orange", "mango",]
 
 // Fruits.push("cocunut");             //added
@@ -260,26 +267,25 @@
 // Fruits.shift();               // removed
 // Fruits.sort();
 
+// ARRAY LENGTH
 // console.log(Fruits);
 // let Numoffruits = Fruits.length;
 // console.log(Numoffruits);
 
+// ITERATING AN ARRAY
 // console.log(Fruits[2]);
 // for (let i = 0; i < Fruits.length; i++){
 //     console.log(Fruits[i]);
 // }
 
+//ENHANCED  FORLOOP
 // for(let Fruit of Fruits)
 //     {
 //         console.log(Fruit);
 //     }
-
-
-
 //----------------------------------------------------------------------------------------------------------------  
 
 // 2 D ARRAYS
-
 // const matrix = [[1,2,3],[4,5,6],[7,8,9]];
 
 // for (row of matrix){
@@ -291,10 +297,18 @@
 // SPREAD OPERATOR
 // let num = [1,2,3,4,5,6,7,8,9];
 
+//UNPACKING ELEMENTS IN AN ARRAY
 // let max = Math.max(...num);
 // let min = Math.min(...num);
 // console.log(max);
 // console.log(min);
+//_____________________________________________
+// let userName = "ismail";
+// let letters =  [...userName];
+// let lettersjoined = [...userName].join("");
+// console.log(letters)
+// console.log(lettersjoined);
+
 
 // let Fruits = ["apple","orange","banana"];
 // let veg = ["tomato","potato","carrot"];
@@ -314,15 +328,12 @@
 // function fridge(...foods){
 //     return foods;
 // }
-
-
 // const food1 = "biriyani";
 // const food2 = "pizza";
 // const food3 = "burger";
 // const food4 = "sushi"
 
 // // fridge(food1,food2);
-
 // const food = fridge(food1,food2,food3,food4);
 
 // console.log(...food);
@@ -349,12 +360,11 @@
 // const totalavg = avg(75,100,85,90,50);
 // console.log(totalavg);
 
+//COMBINING STRINGS 
 // function combinestr(...str)
 // {
 //     return str.join(' ');
-
 // }
-
 // const fullname = combinestr("ismai", "ummer", "kakkathadathil")
 // console.log(fullname);
 //------------------------------------------------------------------------------------------------------------------------
@@ -364,7 +374,6 @@
 // goodbye();
 // hello(wait);
 // wait();
-
 // function hello(callback){
 //     console.log("hello");
 //     callback();
@@ -377,19 +386,17 @@
 // function goodbye(){
 //     console.log("good bye")
 // }
-// sum(dispay, 3,2);
 
+// sum(dispay, 3,2);
 // function sum (callback , x , y){
 //   let result = x +y;
 //   callback(result);
-
 // }
 // function dispay(result) {
 //     console.log(result);
 // }
 
 //=---------------------------------------------------------------------------------------------
-
 // FOR EACH
 
 // let numbers = [1,2,3,4,5,6,7];
@@ -452,7 +459,7 @@
 
 // console.log(arrangedDates);
 
-
+//-------------------------------------------------------------------------------------------------------------------------
 // FILTER MOTHOD
 
 // const numbers = [1,2,3,4,5,6,7,8,9];
@@ -521,7 +528,6 @@
 // FUNCTION EXPPRSSSION
 
 //  const array = [1,2,3,4,5,6];
-
 //  const squre = array.map( function (value){
 //     return Math.pow(value,2);
 // })
@@ -535,15 +541,10 @@
 // const total = array.reduce( function(value , next){
 //    return value+next;
 // })
-
 // console.log(total);
-
 
 //-------------------------------------------------------------------------------------------------------------------
 // ARROW FUNCTIONS
-
-
-
 
 // setTimeout( hello = ()=> console.log("hello")  ,3000)
 
@@ -556,7 +557,6 @@
 // const oddNumbers = numbers.filter((value)=> value%2 !==0 )
 
 // console.log(oddNumbers);
-
 
 
 // const hello = (usrname, age)=> {console.log(`hii ${usrname}`)
@@ -601,7 +601,6 @@
 
 // ---------------------------------------------------------------------------------------------------------------
 
-
 // STATIC METHODS
 
 // class Users {
@@ -626,26 +625,20 @@
 // class animal {
 
 //     static alive = true;
-
 //     eat(){
 //         console.log(`${this.name} is eating`) 
 //     }
-
 // }
-
 // class rabbit extends animal {
 //     name = "rabbit";
 //     run(){
 //         console.log(`the ${this.name} can run`)
 //     }
 // }
-
 // class Duck extends animal {
 //     name = "duck";
 //     swim(){
-
 //             console.log(`the ${this.name} can swim`)
-
 //     }
 // }
 
@@ -656,6 +649,7 @@
 // duck.swim();
 // duck.eat();
 
+//------------------------------------------------------------------------------------------------------------------------
 //SUPER 
 
 // class Animal {
@@ -666,24 +660,18 @@
 //     move(speed){
 //         console.log(`${this.name} is moving at a speed of ${speed} mph`);
 //     }
-
 //     }
-
-
 // class Rabbit extends Animal{
 //     constructor (name , age ,runspeed){
 //         super(name,age)
 //         this.runspeed = runspeed;
-
 //     }
 //     run(){
 //         console.log(`${this.name} can run`);
 //         super.move(this.runspeed);
 //     }
-
 // }
 // class Duck extends Animal{
-
 //     constructor(name,age,swimspeed){
 //         super(name,age)
 //         this.swimspeed = swimspeed;
@@ -693,9 +681,7 @@
 //         super.move(this.swimspeed);
 // }
 // }
-
 // class Pegion extends Animal{
-
 //     constructor(name,age,flyspeed){
 //         super(name, age);
 //         this.flyspeed = flyspeed;
@@ -804,3 +790,76 @@
 // console.log(person1.fullname);
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// DESTRUCURING 
+
+// SWAPING 
+// let a = 2;
+// let b =5;
+// [a, b] =[b,a];
+// console.log(a,b);
+
+//ASSIGNING ARRAY ELEMENTS TO VARIABLES
+// const fruits= ["apple","banana","orange","mango","coconut","watermilon"];
+// [fruit1,fruit2,fruit3,fruit4, ...restoffruits] = fruits;
+// console.log(restoffruits);
+
+//EXTRACTING VALUES FROM OBJECTS 
+// const colors =["red","green","blue","black","white"];
+// [colors[0],colors[3]]= [colors[3],colors[0]]
+// console.log(colors);
+
+//IN FUN. PERAMETERS
+// const person ={
+//     fullName : "ismail",
+//     age : "25",
+//     job : "engineer",
+// } 
+// const person1 = {
+//     fullName : "patrick",
+//     age : 30,
+
+// }
+// const {fullName,age,job= "unemployed"} =  person1 ;
+
+// console.log(fullName);
+// console.log(age);
+// console.log(job);
+
+//EXAMPLE 2 
+// function dispayPerson({fullName,age,job="umemployed"}){
+//  console.log(`fullname  : ${fullName}, age : ${age} , job: ${job}`)
+// }
+// const person ={
+//     fullName : "ismail",
+//     age : "25",
+//     job : "engineer",
+// } 
+// const person1 = {
+//     fullName : "patrick",
+//     age : 30,
+// }
+
+// dispayPerson(person1);
+
+//---------------------------------------------------------------------------------------------------------------------------
+//NESTED OBJECTS
+
+// const person = {
+//     fullname: "ismail",
+//     class: "10th",
+//     age: 16,
+//     hobbies: ["watching movies", "playing", "singing"],
+//     address: {
+//         street: "muthuthala",
+//         place: "pattambi",
+//         district: "palakkad",
+//         state: "kerala",
+//     }
+// }
+
+// console.log(person.fullname);
+// console.log(person.class);
+// console.log(person.age);
+// console.log(person.hobbies[2]);
+// console.log(person.address.place);
