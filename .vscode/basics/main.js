@@ -863,3 +863,26 @@
 // console.log(person.age);
 // console.log(person.hobbies[2]);
 // console.log(person.address.place);
+
+// for( const property in person.address){
+//     console.log(person.address[property]);
+// }
+
+class Person {
+    constructor(name, age , ...address){
+       this.name = name;
+       this.age = age;
+       this.address = new Address(...address); 
+    }
+}
+class Address{
+constructor(street , place , city){
+    this.street = street; 
+    this.place = place;
+    this.city = city;
+}
+}
+
+const person = new Person ("ismail", 12, "perumudiyur", "pattambi","palakkad");
+
+console.log(person)
