@@ -911,3 +911,50 @@
 
 // const maxcal = fruits.reduce((value , next)=> fruits.calorires < value.calorires ? next :value);
 // console.log(maxcal);
+
+
+
+
+// const Fruit = [{name : "apple" , color:"red", calories : 85},
+//             {name : "orange" , color:"orange", calories : 45},
+//             {name : "banana" , color:"yellow", calories : 105},
+//             {name : "coconut" , color:"white", calories : 150}
+//  ]
+//  const maxcalfruit =  Fruit.reduce((value , next)=> value.calories > next.calories ? value:next)
+
+//  console.log(maxcalfruit);
+
+ //------------------------------------------------------------------------------------------------
+//SORT 
+//  const numbers = [1,10,20,3,9,6,4,9];
+
+//  numbers.sort((a,b)=> a-b)
+//  console.log(numbers)
+
+// const people =[ {name : "vpongebob" , age : 25 , gpa :2.0},
+//                {name : "atrick" , age : 28 , gpa :2.8},
+//                {name : "qidword" , age : 40 , gpa :3.4},
+//                {name : "sandy" , age : 20 , gpa :3.9}
+// ]
+
+// people.sort((a,b)=> a.name.localeCompare( b.name))
+
+// console.log(people)
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//SHUFFLE
+
+// const cards = ["A", 1,2,3,4,5,6,7,8,9,10,"J","Q","K"];
+
+// shuffle(cards);
+
+// console.log(cards)
+
+// function shuffle (cards){
+//     for(i = cards.length-1;i>0;i--){
+//         const random = Math.floor(Math.random() * (i+1));
+//         [cards[i],cards[random]] = [cards[random],cards[i]]
+//     }
+// }
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//DATE OBJECTS
