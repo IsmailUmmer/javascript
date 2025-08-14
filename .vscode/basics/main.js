@@ -884,3 +884,30 @@
 // const person = new Person ("ismail", 16 , "muthuthala", "pattambi", "palakkad", "kerala");
 
 // console.log(person.address.place)
+
+// const fruits = [
+//     {name :"apple", color :"red", calorires : 96},
+//     {name :"banana", color :"yellow", calorires : 100},
+//     {name :"orange", color :"orange", calorires : 84},
+//     {name :"pinapple", color :"yellow", calorires : 44},
+//     {name :"cocounut", color :"brown", calorires : 50} 
+// ]
+
+//  fruits.pop();
+//  fruits.push({name: "jackfruit" , color : "yellow", calorires : 98})
+
+//--------------------filter
+// const newfruit = fruits.filter(fruit => fruit.calorires>70 )
+// console.log(newfruit);
+
+//----------------for each 
+// fruits.forEach(fruits => console.log(fruits.name))
+
+//-----------------map
+// const newfruit = fruits.map(fruit => (fruit.name))  
+// console.log(newfruit)
+
+//-----------------reduce
+
+// const maxcal = fruits.reduce((value , next)=> fruits.calorires < value.calorires ? next :value);
+// console.log(maxcal);
