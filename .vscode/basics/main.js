@@ -958,3 +958,26 @@
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
 //DATE OBJECTS
+// const date = new Date("2024-04-02T12:30:11Z")
+// const date = new Date()
+
+// const year = date.getFullYear();
+// const month = date.getMonth();
+// const day = date.getDay();
+// const hour =date.getHours();
+// console.log(hour)
+
+//---------
+// date.setDate(2);
+// date.setMonth(3)
+
+// console.log(date);
+//----------
+// const date1 = new Date("2030-12-31");
+// const date2 = new Date("2031-01-01");
+
+// if (date1<date2){
+//     console.log("happy new year")
+// }
+
+//CLOSURE
