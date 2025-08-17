@@ -924,7 +924,7 @@
 
 //  console.log(maxcalfruit);
 
- //------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
 //SORT 
 //  const numbers = [1,10,20,3,9,6,4,9];
 
@@ -981,3 +981,43 @@
 // }
 
 //CLOSURE
+// function game() {
+//     let count = 1;
+//     function increment() {
+//         count++;
+//         console.log(`counter is ${count}`);
+//     }
+//     function decrement() {
+//         count--;
+//         console.log(`counter is ${count}`);
+//     }
+//     return {increment,decrement};
+// }
+
+// const play =  game()
+// play.increment();
+// play.increment();
+// play.decrement();
+
+
+// function getScore(){
+//     let score = 0;
+// function increseScore (points){
+//     score += points;
+//     console.log(`+${points}pts`);
+// }
+// function decreseScore (points){
+//     score -= points;
+//     console.log(`+${points}pts`);
+// }
+// function Tscore(){
+//   return score;
+// }
+// return {increseScore,decreseScore,Tscore}
+// }
+
+// const newscore = getScore();
+// newscore.increseScore(5);
+// newscore.increseScore(5);
+// newscore.decreseScore(2)
+// console.log(`your score is ${newscore.Tscore()}`);
