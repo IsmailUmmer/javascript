@@ -1021,3 +1021,36 @@
 // newscore.increseScore(5);
 // newscore.decreseScore(2)
 // console.log(`your score is ${newscore.Tscore()}`);
+
+//--------------------------------------------------------------------------------------------------------------------------
+// SET TIMEOUT
+// let timeout;
+// function settimeOut(){
+//     console.log("started")
+//  timeout= setTimeout(()=> window.alert("hellow"),3000);
+// }
+// function cleartimeout(){
+//     console.log("ended")
+// clearTimeout(timeout);
+// }
+
+//----------------------------------------------------------------------------------------------------------------------------
+//TIME 
+
+// function loadData (){
+//     console.time("loadData")
+//     for( let i=0 ;i<10000000; i++){
+
+//     }
+//     console.timeEnd("loadData");
+// }
+// loadData()
+
+//--------------------------------------------------------------------------------------------------------------------------
+
+//TOLOCAL STRING
+// let number = 504103104;
+
+// number = number.toLocaleString("en-IN",{style :"currency",currency: "INR"});
+
+// console.log(number)
