@@ -1,0 +1,26 @@
+/* Add styles here */
+body{
+    background-image: url(clock_wall.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    
+    
+}
+#box{
+    font-family: monospace;
+   font-size: 5rem;
+   font-weight: bold;
+   text-align: center;
+   backdrop-filter: blur(5px);
+   background-color: rgba(113, 180, 239, 0.245);
+   width: 100%;
+}

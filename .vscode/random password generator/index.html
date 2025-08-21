@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <link href='style.css' rel='stylesheet'>
+</head>
+<body>
+  <div id="container">
+   <h2> Password Generator </h2>
+   <label for=""> Password lenth </label>
+ <input type="number" min = "0" max="50" value="12" id="passwordLength"><br><br>
+  
+ 
+ <label class="switch" id = "includeUpperCase"> 
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<label for="">Needs uppercase</label><br><br>
+
+<label class="switch" id = "includeLowerCase"> 
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<label for="">Needs Lowercase</label><br><br>
+
+<label class="switch" id = "includeNumbers"> 
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<label for="">Needs numbers</label><br><br>
+
+
+<label class="switch" id = "includeSymbols"> 
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<label for="">Needs symbols</label><br><br>
+
+ <button type="button" onclick="generatedpassword()" > Generate Password</button>
+
+ <h3 id="result"></h3>
+
+</div>
+
+
+
+
+  <script defer type="text/javascript" src="main.js"></script>
+</body>
+</html>
