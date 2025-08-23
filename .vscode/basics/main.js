@@ -1085,3 +1085,12 @@
 //     console.log("this always executes")
 // }
 // console.log("end");
+//--------------------------------------------------------------------------------------------------------------------------------
+// DOM
+
+// console.dir(document);
+// document.body.style.backgroundColor ="red";
+// const WelcomeMsg = document.getElementById("Welcome-msg");
+// const username = "ismail";
+
+// WelcomeMsg.textContent += username === "" ? "guest" : username; 
