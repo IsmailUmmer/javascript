@@ -1054,5 +1054,43 @@
 // number = number.toLocaleString("en-IN",{style :"currency",currency: "INR"});
 
 // console.log(number)
+//---------------------------------------------------------------------------------------------------------------------------
+// ASYNCHRONUS CODE
 
+// function n1(callback){
+//    setTimeout( ()  => {console.log("task 1 "),
+//     callback();
+// },3000);
+// }
 
+// function n2(){
+// console.log("task 2");
+// console.log("task 3");
+// console.log("task 4");
+// console.log("task 5");
+// }
+// n1(n2);
+//--------------------------------------------------------------------------------------------------------------------------
+// ERRORS
+
+// try{
+//     console.laf("e")
+// }
+
+// catch(error){
+//     console.error(error);
+
+// }
+// finally{
+//     console.log("this always executes")
+// }
+// console.log("end");
+//--------------------------------------------------------------------------------------------------------------------------------
+// DOM
+
+// console.dir(document);
+// document.body.style.backgroundColor ="red";
+// const WelcomeMsg = document.getElementById("Welcome-msg");
+// const username = "ismail";
+
+// WelcomeMsg.textContent += username === "" ? "guest" : username; 
