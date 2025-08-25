@@ -1094,3 +1094,8 @@
 // const username = "ismail";
 
 // WelcomeMsg.textContent += username === "" ? "guest" : username; 
+
+const lielement =document.querySelector("li");
+Array.of(lielement).forEach(lielement => lielement.style.backgroundColor = "red");
+//)
+
