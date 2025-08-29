@@ -1095,7 +1095,22 @@
 
 // WelcomeMsg.textContent += username === "" ? "guest" : username; 
 
-const lielement =document.querySelector("li");
-Array.of(lielement).forEach(lielement => lielement.style.backgroundColor = "red");
-//)
+// const lielement =document.querySelector("li");
+// Array.of(lielement).forEach(lielement => lielement.style.backgroundColor = "red");
+// //)
 
+
+
+// myelement = document.getElementById("vegitables");
+// firstchild = myelement.firstElementChild;
+// firstchild.style.backgroundColor = "red";
+
+myelement = document.querySelectorAll("ul");
+
+myelement.forEach(myelement => {
+    const first = myelement.firstelementChild;
+    first.style.backgroundColor = "red"});
+// console.log(myelement)
+// Array.from(firstchild).forEach(myelement => myelement.style.backgroundColor = "red")
+console.log(firstchild)
+// firstchild.foreach( element =>  element.style.backgroundColor = "red");
