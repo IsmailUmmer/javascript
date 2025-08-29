@@ -1094,6 +1094,20 @@
 // const username = "ismail";
 
 // WelcomeMsg.textContent += username === "" ? "guest" : username; 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+//  ELEMENT SELECTOES
+
+// const myHeadings = document.getElementsByClassName("fruits");
+// //  for (let myHeading of myHeadings) {
+// //     myHeading.style.backgroundColor = "yellow";
+// //  }
+
+// Array.from(myHeadings).forEach(myHeading => {myHeading.style.backgroundColor = "yellow";});
+
+
+// console.log(myHeadings);
+
 
 // const lielement =document.querySelector("li");
 // Array.of(lielement).forEach(lielement => lielement.style.backgroundColor = "red");
