@@ -1102,29 +1102,52 @@
 // //  for (let myHeading of myHeadings) {
 // //     myHeading.style.backgroundColor = "yellow";
 // //  }
-
 // Array.from(myHeadings).forEach(myHeading => {myHeading.style.backgroundColor = "yellow";});
-
-
 // console.log(myHeadings);
-
 
 // const lielement =document.querySelector("li");
 // Array.of(lielement).forEach(lielement => lielement.style.backgroundColor = "red");
 // //)
 
-
-
 // myelement = document.getElementById("vegitables");
 // firstchild = myelement.firstElementChild;
 // firstchild.style.backgroundColor = "red";
 
-myelement = document.querySelectorAll("ul");
-
-myelement.forEach(myelement => {
-    const first = myelement.firstelementChild;
-    first.style.backgroundColor = "red"});
+// myelement = document.getElementById("fruits");
+// myelementlast = myelement.lastElementChild;
+// myelementlast.style.backgroundColor = "red";
+// myelement.forEach(myelement => {
+//     const first = myelement.lastElementChild;
+//     console.log(first)
+    
+//     first.style.backgroundColor = "red"});
 // console.log(myelement)
 // Array.from(firstchild).forEach(myelement => myelement.style.backgroundColor = "red")
-console.log(firstchild)
+
 // firstchild.foreach( element =>  element.style.backgroundColor = "red");
+
+// const myelement  = document.getElementById("desert");
+// const myelchild = myelement.children;
+// console.log(myelement);
+
+// myelchild[0].style.backgroundColor = "red";
+
+// Array.from(myelchild).forEach(child => {child.style.backgroundColor = "red";})
+
+//--------------------------------------------------------------------------------------------------
+// ADD ELEMENTS IN SCRIPT
+
+// CREATE EDIT APPEDND
+const newh1 = document.createElement("h1");
+// const box1 = document.getElementById("box1");
+const selectors = document.querySelectorAll(".box");
+newh1.id = "myh1"; 
+newh1.style.textAlign = "center";
+newh1.style.color = "tomato"
+newh1.textContent = "ismail";
+//  document.body.insertBefore(newh1,selectors[5]);    // without ids 
+// const box2= document.getElementById("box2");
+// document.body.insertBefore(newh1,box2);
+
+
+document.getElementById("box3").prepend(newh1);
