@@ -1119,7 +1119,7 @@
 // myelement.forEach(myelement => {
 //     const first = myelement.lastElementChild;
 //     console.log(first)
-    
+
 //     first.style.backgroundColor = "red"});
 // console.log(myelement)
 // Array.from(firstchild).forEach(myelement => myelement.style.backgroundColor = "red")
@@ -1138,16 +1138,68 @@
 // ADD ELEMENTS IN SCRIPT
 
 // CREATE EDIT APPEDND
-const newh1 = document.createElement("h1");
-// const box1 = document.getElementById("box1");
-const selectors = document.querySelectorAll(".box");
-newh1.id = "myh1"; 
-newh1.style.textAlign = "center";
-newh1.style.color = "tomato"
-newh1.textContent = "ismail";
-//  document.body.insertBefore(newh1,selectors[5]);    // without ids 
-// const box2= document.getElementById("box2");
-// document.body.insertBefore(newh1,box2);
+// const newh1 = document.createElement("h1");
+// // const box1 = document.getElementById("box1");
+// const selectors = document.querySelectorAll(".box");
+// newh1.id = "myh1"; 
+// newh1.style.textAlign = "center";
+// newh1.style.color = "tomato"
+// newh1.textContent = "ismail";
+// //  document.body.insertBefore(newh1,selectors[5]);    // without ids 
+// // const box2= document.getElementById("box2");
+// // document.body.insertBefore(newh1,box2);
 
 
-document.getElementById("box3").prepend(newh1);
+
+// document.getElementById("box3").prepend(newh1);
+
+
+//-----------------------------------------------------------------
+// let buttons = document.querySelectorAll(".buttons");
+// //NODE LIST APPEND 
+// const newbutton  = document.createElement("button");
+// newbutton.textContent = "button 5"
+// newbutton.classList= "buttons"
+// document.body.appendChild(newbutton);
+
+// buttons = document.querySelectorAll(".buttons");
+
+// console.log(buttons)
+// buttons.forEach( buttons =>{
+//     buttons.addEventListener("mouseover", event => event.target.style.backgroundColor = " hsl(240, 90%, 53%)")
+// } );
+// buttons.forEach( buttons =>{
+//     buttons.addEventListener("mouseout", event => event.target.style.backgroundColor = " hsl(240, 90%, 63%)")
+// } );
+// buttons.forEach( buttons =>{
+//     buttons.addEventListener("click", event => {event.target.remove();
+//    buttons = document.querySelectorAll(".buttons");
+//     console.log(buttons)}
+// )
+
+// } );
+
+//---------------------------------------------------------------------------------
+//CLASSLIST
+
+// const button = document.getElementById("buttons");
+// button.addEventListener('mouseover', event => event.target.classList.add("enabled"))
+
+// button.addEventListener("click", event => {
+//     if(event.target.classList.contains("desabled")){
+//             button.textContent += "😉";
+//     }
+//     else{
+//            event.target.classList.add("desabled");
+//     }
+// });
+ const button = document.querySelectorAll(".buttons");
+button.forEach( button => button.classList.add("enabled"))
+button.forEach(button => button.addEventListener("mouseover", event => event.target.classList.add("hover")));
+button.forEach(button => button.addEventListener("mouseout", event => event.target.classList.remove("hover")));
+button.forEach(button => button.addEventListener("click" , event => {
+if(event.target.classList.contains("desabled")){
+    button.textContent += "😒"
+}else{
+    event.target.classList.add("desabled")}
+}));
