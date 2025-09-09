@@ -10,13 +10,15 @@
 
 <body>
   <div class="choices">
-    <button>🪨</button>
-    <button>✂️</button>
-    <button>📃</button>
+    <button onclick="play('rock')">👊</button>
+    <button onclick="play('papper')">🤚</button>
+    <button onclick="play('scissor')">✌️</button>
   </div> 
-  <p> playerScore</p>
-  <p> computerScore</p>
-  <h2> its a tie </h2>
+  <p id="playerchoice"></p>
+  <p id="computerchoice"></p> <br>
+  <p>playerScore :<span id="playerScoredisp"> </span></p>
+  <p>computerScore :<span id="computerScoredisp"> </span></p>
+  <h2 id="result"> </h2>
   <script defer type="text/javascript" src="main.js"></script>
 </body>
 
