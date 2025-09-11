@@ -14,7 +14,28 @@
 }
 img.displayslide{
     display: block;
-
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
+ .images button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.255);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 30px;
+}
+.next{
+    right: 0;
+}
+@keyframes fade{
+    from {opacity: .5;}
+    to { opacity: 1;}
+}
 
