@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+    background-color: hsl(230, 71%, 64%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices button{
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  border-radius: 250px;
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(78, 249, 69);
+  transition: background-color 0.5s ease;
+}
+.choices button:hover{
+    background-color: rgb(52, 221, 43);
+}
+p{
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin: 2px;
+}
+h2{
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+}
+.greentext{
+  color: rgb(6, 236, 6);
+}
+.redtext{
+
+ color:  red;
+}

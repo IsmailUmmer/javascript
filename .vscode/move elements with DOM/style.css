@@ -1,0 +1,15 @@
+/* Add styles here */
+*{
+    margin: 0px ;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    font-size: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(240, 69%, 72%);
+    position: relative;
+}

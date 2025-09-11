@@ -1,0 +1,27 @@
+/* Add styles here */
+/* .box{
+    border: 2px solid black;
+    height: 100px;
+} */
+
+#buttons{
+     
+     
+     padding: 10px 30px;
+     font-size: 2rem;
+     border-radius: 5px;
+     margin: 10px;
+     border: none;
+     display: block;
+}
+.enabled{
+    background-color: green;
+    color: rgb(255, 255, 255);
+}
+.desabled {
+    background-color: gray;
+    color: rgb(213, 188, 188);
+}
+.hover{
+    font-size: 1rem;
+}
