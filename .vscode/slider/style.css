@@ -1,0 +1,20 @@
+
+
+.images{
+    position: relative; 
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.images img{
+    width: 100%;
+    display: none;
+
+}
+img.displayslide{
+    display: block;
+
+}
+
+
