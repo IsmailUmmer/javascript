@@ -1119,12 +1119,28 @@
 // firstchild = myelement.firstElementChild;
 // firstchild.style.backgroundColor = "red";
 
-myelement = document.querySelectorAll("ul");
+// myelement = document.querySelectorAll("ul");
 
-myelement.forEach(myelement => {
-    const first = myelement.firstelementChild;
-    first.style.backgroundColor = "red"});
+// myelement.forEach(myelement => {
+//     const first = myelement.firstelementChild;
+//     first.style.backgroundColor = "red"});
 // console.log(myelement)
 // Array.from(firstchild).forEach(myelement => myelement.style.backgroundColor = "red")
-console.log(firstchild)
+// console.log(firstchild)
 // firstchild.foreach( element =>  element.style.backgroundColor = "red");
+//-----------------------------------------------------------------------------------------------------------------------------------
+const btn = document.getElementById("btn");
+const img = document.getElementById("img");
+
+   btn.addEventListener("click", () => {
+        if( img.style.visibility === "visible"){
+        img.style.visibility = "hidden";
+        btn.textContent = "Show"
+    }
+        
+        else{
+            btn.textContent = "hide"
+                img.style.visibility = "visible";}
+    }
+
+    )
