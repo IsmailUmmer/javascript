@@ -1207,26 +1207,76 @@ button.forEach(button => button.addEventListener("click", event => {
 
 // CALLBACK HELL
 
-function task1(clallback) {
+function task1() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (task1 = true) {
+                resolve("task 1 compleate");
+            }
+            else {
+                reject("task 1 failed")
+            }
+        }, 3000);
 
-    setTimeout(() => {console.log("task 1 compleate");
-     clallback();}, 3000);
-   
+    }
+) };
+function task2() {
+    return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        if (task2 = true) {
+            resolve("task 2 compleate");
+        }
+        else {
+            reject("task 2 failed")
+        }
+    }, 1300);
 }
-function task2(callback) {
-    console.log("task 2 compleate");
-    callback();
+)};
+function task3() {
+    return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        if (task3 = true) {
+            resolve("task 3 compleate");
+        }
+        else {
+            reject("task 3 failed")
+        }
+    }, 2300);
 }
-function task3(callback) {
-    console.log("task 3 compleate");
-    callback();
+)};
+function task4() {
+    return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        if (task4 = false) {
+            resolve("task 4 compleate");
+        }
+        else {
+            reject("task 4 failed")
+        }
+    }, 4300);
 }
-function task4(callback) {
-    console.log("task 4 compleate");
-    callback();
+)};
+
+// task1().then(value => {console.log(value); return task2()})
+//   .then(value => {console.log(value); return task3()})
+//   .then(value => {console.log(value); return task4()})
+//   .then(value => console.log("all fisnished")).catch(error => console.error(error));
+  
+// ASYNC/AWAIT
+async function dotasks(){
+ try {
+     const task1result = await task1();
+     console.log(task1result);
+     const task2result = await task2();
+     console.log(task2result);
+     const task3result = await task3();
+     console.log(task3result);
+     const task4result = await task4();
+     console.log(task4result);
+ } catch (error) {
+    console.error(error);
+ }
 }
-task1(() =>
-    task2(() =>
-        task3(() =>
-            task4( ()=> console.log("all task compleate")))));
+dotasks();
+
 
