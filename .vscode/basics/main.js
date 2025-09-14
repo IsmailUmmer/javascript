@@ -1193,13 +1193,40 @@
 //            event.target.classList.add("desabled");
 //     }
 // });
- const button = document.querySelectorAll(".buttons");
-button.forEach( button => button.classList.add("enabled"))
+const button = document.querySelectorAll(".buttons");
+button.forEach(button => button.classList.add("enabled"))
 button.forEach(button => button.addEventListener("mouseover", event => event.target.classList.add("hover")));
 button.forEach(button => button.addEventListener("mouseout", event => event.target.classList.remove("hover")));
-button.forEach(button => button.addEventListener("click" , event => {
-if(event.target.classList.contains("desabled")){
-    button.textContent += "😒"
-}else{
-    event.target.classList.add("desabled")}
+button.forEach(button => button.addEventListener("click", event => {
+    if (event.target.classList.contains("desabled")) {
+        button.textContent += "😒"
+    } else {
+        event.target.classList.add("desabled")
+    }
 }));
+
+// CALLBACK HELL
+
+function task1(clallback) {
+
+    setTimeout(() => {console.log("task 1 compleate");
+     clallback();}, 3000);
+   
+}
+function task2(callback) {
+    console.log("task 2 compleate");
+    callback();
+}
+function task3(callback) {
+    console.log("task 3 compleate");
+    callback();
+}
+function task4(callback) {
+    console.log("task 4 compleate");
+    callback();
+}
+task1(() =>
+    task2(() =>
+        task3(() =>
+            task4( ()=> console.log("all task compleate")))));
+
